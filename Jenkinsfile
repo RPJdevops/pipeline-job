@@ -16,8 +16,6 @@ pipeline {
 						git branch: 'main', url: 'https://github.com/RPJdevops/pipeline-job.git'
 					}
 				}
-			} 
-		}
 		stage('Deploy'){
 			steps {
 				sh '''
@@ -35,3 +33,4 @@ pipeline {
 				'''
 			}
 		}	
+	}
