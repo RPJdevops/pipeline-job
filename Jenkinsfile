@@ -13,7 +13,7 @@ pipeline {
 							sleep 15
 							echo "This is a Test stage"
 						'''	
-						git branch: 'main', url: 'https://github.com/jaintpharsha/devops-jan-22.git'
+						git branch: 'main', url: 'https://github.com/RPJdevops/pipeline-job.git'
 					}
 				}
 			} 
