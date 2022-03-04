@@ -1,5 +1,5 @@
-	pipipeline {
-	agent any 
+	pipeline {
+	agent { label 'master' } 
 	stages {
 		stage('Both build and test') {
 			parallel {
@@ -15,7 +15,7 @@
 							sleep 15
 							echo "This is a Test stage"
 						'''	
-						git branch: 'main', url: 'https://github.com/RPJdevops/pipeline-job.git'
+						git branch: 'main', url: 'https://github.com/jaintpharsha/devops-jan-22.git'
 					}
 				}
 			} 
